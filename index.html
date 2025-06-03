@@ -20,7 +20,7 @@
       }
       main {
         padding: 2rem;
-        max-width: 1500px;
+        max-width: 1000px;
         margin: 0 auto;
       }
       h2 {
@@ -65,6 +65,18 @@
       .speaker-name {
         font-weight: bold;
         color: #2c3e50;
+      }
+      .acknowledgments {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .acknowledgments img {
+        max-height: 80px;
+        object-fit: contain;
       }
     </style>
   </head>
@@ -151,6 +163,11 @@
           <div class="time">15:45 - 16:45</div>
           <div class="description">Future Directions + Closing</div>
         </div>
+      </div>
+      <h2>Acknowledgments</h2>
+      <div class="acknowledgments">
+        <img src="acknowledgments/erc.png" alt="ERC" />
+        <img src="acknowledgments/mcml.jpg" alt="MCML" />
       </div>
     </main>
   </body>
