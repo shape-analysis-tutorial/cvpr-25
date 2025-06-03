@@ -46,10 +46,11 @@
         flex: 1;
       }
       .speakers {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        display: flex;
+        justify-content: space-between;
         gap: 1.5rem;
         margin-top: 1.5rem;
+        overflow-x: auto;
       }
       .speaker {
         text-align: center;
@@ -77,28 +78,12 @@
     </header>
     <main>
       <p>
-        The field of 3D shape analysis is concerned with the extraction of
-        “useful” information from geometric data. Shape analysis has a high
-        relevance for a wide range of applications, such as autonomous driving,
-        biomedicine, or augmented/virtual reality. A core task of 3D shape
-        analysis is shape matching, i.e. identifying correspondences between
-        given shapes. While traditional shape matching methods rely on
-        optimizing a task-specific objective function, modern shape matching
-        oftentimes involves data-driven components. We will first introduce
-        traditional methods for shape matching, starting with the linear and
-        quadratic assignment problems. We then present product graph formalism
-        in different settings, including 2D to 2D, 2D to 3D or shape to image,
-        and 3D to 3D shape matching. Furthermore, we then discuss problem
-        formulations such as shape interpolation, as well as learning-based
-        shape correspondence methods, including spectral approaches that provide
-        efficient structure and circumvent the need for annotations altogether.
-        Additionally, we discuss the practical relevance of these methods to
-        application domains in image-to-image and shape-to-image correspondence
-        such as medical imaging, and address the role of recent developments in
-        foundation models for shape analysis. Finally, the tutorial will
-        conclude by addressing the ongoing challenges of shape matching,
-        including handling partial shapes, and will explore potential future
-        directions in the field.
+        3D shape analysis deals with extracting information from geometric data,
+        with applications in driving, biomedicine, and AR/VR. This tutorial
+        covers classical shape matching methods (linear and quadratic assignment
+        problems), product graph formalisms, learning-based correspondence,
+        spectral methods, and real-world applications. Challenges and future
+        directions are also addressed.
       </p>
 
       <h2>Speakers</h2>
