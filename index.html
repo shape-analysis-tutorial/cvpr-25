@@ -46,11 +46,10 @@
         flex: 1;
       }
       .speakers {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 1.5rem;
         margin-top: 1.5rem;
-        overflow-x: auto;
       }
       .speaker {
         text-align: center;
