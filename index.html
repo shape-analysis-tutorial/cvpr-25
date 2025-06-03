@@ -1,34 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shape Analysis</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    main {
-      padding: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Shape Analysis</h1>
-  </header>
-  <main>
-    <p>Welcome to the Shape Analysis tutorial website. More content will be added soon.</p>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape Analysis</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 0.5rem;
+        margin-top: 2rem;
+      }
+      .schedule {
+        margin-top: 1rem;
+      }
+      .schedule-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      .time {
+        font-weight: bold;
+        width: 120px;
+      }
+      .description {
+        flex: 1;
+      }
+      .speakers {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .speaker {
+        text-align: center;
+      }
+      .speaker img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .speaker-name {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        3D Shape Analysis: From Classical Optimization to Learning-Based
+        Matching
+      </h1>
+    </header>
+    <main>
+      <p>
+        The field of 3D shape analysis is concerned with the extraction of
+        “useful” information from geometric data...
+      </p>
+
+      <h2>Schedule</h2>
+      <div class="schedule">
+        <!-- schedule items here -->
+        <!-- (unchanged from your original HTML) -->
+      </div>
+
+      <h2>Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <img src="speakers_photos/daniel.png" alt="Speaker 1" />
+          <div class="speaker-name">Daniel Cremers</div>
+        </div>
+        <div class="speaker">
+          <img src="speakers_photos/paul.png" alt="Speaker 4" />
+          <div class="speaker-name">Paul Roetzer</div>
+        </div>
+        <div class="speaker">
+          <img src="speakers_photos/lennart.JPG" alt="Speaker 2" />
+          <div class="speaker-name">Lennart Bastian</div>
+        </div>
+        <div class="speaker">
+          <img src="speakers_photos/viki.JPG" alt="Speaker 5" />
+          <div class="speaker-name">Viktoria Ehm</div>
+        </div>
+      </div>
+      <div class="speaker">
+        <img src="speakers_photos/nafie.png" alt="Speaker 3" />
+        <div class="speaker-name">Nafie El Amrani</div>
+      </div>
+    </main>
+  </body>
 </html>
