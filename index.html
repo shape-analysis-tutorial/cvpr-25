@@ -86,6 +86,16 @@
         max-height: 60px;
         object-fit: contain;
       }
+      .teaser-img-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .teaser img {
+        max-height: 250px;
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
@@ -97,13 +107,17 @@
     </header>
     <main>
       <p>
-        3D shape analysis deals with extracting information from geometric data,
-        with applications in driving, biomedicine, and AR/VR. This tutorial
-        covers classical shape matching methods, product graph formalisms,
-        learning-based correspondence, spectral methods, and real-world
-        applications. Challenges and future directions are also addressed.
+        3D shape analysis focuses on extracting meaningful information from geometric data, 
+        with applications in autonomous driving, biomedicine, and AR/VR. In this tutorial, we provide
+        an overview of classical shape matching techniques, product graph approaches, 
+        learning-based correspondence methods, spectral techniques, and their real-world applications. 
+        We also discuss current challenges and outline promising directions for future research.
       </p>
-
+      <div class="teaser-img-wrapper">
+        <div class="teaser img">
+          <img src="img/3dsa_tuto.jpg" alt="teaser" />
+        </div>
+      </div>
       <h2>Speakers & Organizers</h2>
       <div class="speakers"><div class="speakers-wrapper">
         <div class="speaker">
