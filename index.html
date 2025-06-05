@@ -46,13 +46,21 @@
         flex: 1;
       }
       .speakers {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        display: flex;
+        justify-content: center;
         gap: 1.5rem;
         margin-top: 1.5rem;
       }
+      .speakers-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+        gap: 2rem;
+      }
       .speaker {
         text-align: center;
+        margin:0px auto;
       }
       .speaker img {
         width: 100px;
@@ -97,7 +105,7 @@
       </p>
 
       <h2>Speakers & Organizers</h2>
-      <div class="speakers">
+      <div class="speakers"><div class="speakers-wrapper">
         <div class="speaker">
           <img src="speakers_photos/daniel.png" alt="Speaker 1" />
           <div class="speaker-name">Daniel Cremers</div>
@@ -110,6 +118,8 @@
           <img src="speakers_photos/zorah.png" alt="Organiser 1" />
           <div class="speaker-name">Zorah Lähner</div>
         </div>
+      </div></div>
+      <div class="speakers"><div class="speakers-wrapper">
         <div class="speaker">
           <img src="speakers_photos/paul.jpg" alt="Speaker 4" />
           <div class="speaker-name">Paul Roetzer</div>
@@ -126,7 +136,7 @@
           <img src="speakers_photos/nafie.jpg" alt="Speaker 3" />
           <div class="speaker-name">Nafie El Amrani</div>
         </div>
-      </div>
+      </div></div>
 
       <h2>Schedule</h2>
       <div class="schedule">
