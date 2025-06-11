@@ -78,6 +78,19 @@
         font-weight: bold;
         color: #2c3e50;
       }
+      .speaker-link {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .speaker-link:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+      .speaker-link:hover .speaker {
+        background-color: #f0f0f0; /* Light background on hover */
+      }
       .acknowledgments {
         display: flex;
         justify-content: center;
@@ -129,36 +142,51 @@
       </div>
       <h2>Speakers & Organizers</h2>
       <div class="speakers"><div class="speakers-wrapper">
-        <div class="speaker">
-          <img src="speakers_photos/daniel.png" alt="Speaker 1" />
-          <div class="speaker-name">Daniel Cremers</div>
-        </div>
-        <div class="speaker">
-          <img src="speakers_photos/florian.jpg" alt="Organiser 1" />
-          <div class="speaker-name">Florian Bernard</div>
-        </div>
+        <a href="https://cvg.cit.tum.de/members/cremers" class="speaker-link">
+          <div class="speaker">
+            <img src="speakers_photos/daniel.png" alt="Speaker 1" />
+            <div class="speaker-name">Daniel Cremers</div>
+          </div>
+        </a>
+        <a href="https://lovc.cs.uni-bonn.de/index.php/team/florian-bernard/" class="speaker-link">
+          <div class="speaker">
+            <img src="speakers_photos/florian.jpg" alt="Organiser 1" />
+            <div class="speaker-name">Florian Bernard</div>
+          </div>
+        </a>
+        <a href="https://geometryinml.cs.uni-bonn.de/team/zorah/" class="speaker-link">
         <div class="speaker">
           <img src="speakers_photos/zorah.png" alt="Organiser 1" />
           <div class="speaker-name">Zorah Lähner</div>
         </div>
+        </a>
       </div></div>
       <div class="speakers"><div class="speakers-wrapper">
+
+        <a href="https://paulroetzer.github.io/" class="speaker-link">
         <div class="speaker">
           <img src="speakers_photos/paul.jpg" alt="Speaker 4" />
           <div class="speaker-name">Paul Roetzer</div>
         </div>
+        </a>
+        <a href="https://www.cs.cit.tum.de/camp/members/lennart-bastian/" class="speaker-link">
         <div class="speaker">
           <img src="speakers_photos/lennart.JPG" alt="Speaker 2" />
           <div class="speaker-name">Lennart Bastian</div>
         </div>
+        </a>
+        <a href="https://vikiehm.github.io/" class="speaker-link">
         <div class="speaker">
           <img src="speakers_photos/viki.JPG" alt="Speaker 5" />
           <div class="speaker-name">Viktoria Ehm</div>
         </div>
+        </a>
+        <a href="https://nafieamrani.github.io/" class="speaker-link">
         <div class="speaker">
           <img src="speakers_photos/nafie.jpg" alt="Speaker 3" />
           <div class="speaker-name">Nafie El Amrani</div>
         </div>
+        </a>
       </div></div>
 
       <h2>Schedule</h2>
